@@ -1,0 +1,40 @@
+---
+title: OpenAI
+---
+
+## Example
+
+<CodeGroup>
+
+```python agent.py
+"""Run `pip install yfinance` to install dependencies."""
+
+from phi.agent import Agent
+from phi.model.openai import OpenAIChat
+from phi.tools.yfinance import YFinanceTools
+
+agent = Agent(
+    model=OpenAIChat(id="gpt-4o"),
+    tools=[YFinanceTools(stock_price=True)],
+    show_tool_calls=True,
+    markdown=True,
+)
+
+# Print the response in the terminal
+agent.print_response("What is the stock price of NVDA and TSLA")
+
+```
+
+</CodeGroup>
+
+## OpenAI Params
+
+<Snippet file="llm-openai-reference.mdx" />
+
+For more information, please refer to the [OpenAI docs](https://platform.openai.com/docs/api-reference/chat/create) as well.
+
+## Model Params
+
+`OpenAIChat` is a subclass of the `Model` class and has access to the same params
+
+<Snippet file="model-base-reference.mdx" />

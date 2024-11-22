@@ -1,0 +1,521 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Phidata",
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
+  },
+  "favicon": "/favicon.png",
+  "colors": {
+    "primary": "#FF4017",
+    "light": "#FF4017",
+    "dark": "#FF4017",
+    "background": {
+      "light": "#FFFFFF",
+      "dark": "#111113"
+    }
+  },
+  "font": {
+    "headings": {
+      "family": "Inter",
+      "weight": 900
+    },
+    "body": {
+      "family": "Inter",
+      "weight": 400
+    }
+  },
+  "layout": "sidenav",
+  "sidebar": {
+    "items": "undecorated"
+  },
+  "feedback": {
+    "thumbsRating": true,
+    "suggestEdit": true
+  },
+  "topbarLinks": [
+    {
+      "name": "Discord",
+      "url": "https://phidata.link/discord"
+    },
+    {
+      "name": "Community",
+      "url": "https://community.phidata.com/"
+    },
+    {
+      "name": "Log In",
+      "url": "https://phidata.app"
+    }
+  ],
+  "topbarCtaButton": {
+    "type": "github",
+    "url": "https://github.com/phidatahq/phidata"
+  },
+  "tabs": [
+    {
+      "name": "Examples",
+      "url": "examples"
+    },
+    {
+      "name": "Templates",
+      "url": "templates"
+    },
+    {
+      "name": "Reference",
+      "url": "reference"
+    },
+    {
+      "name": "FAQs",
+      "url": "faq"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Introduction",
+      "pages": ["agents", "agent-ui", "monitoring", "workflows", "templates", "videos", "getting-help"]
+    },
+    {
+      "group": "Documentation",
+      "pages": [
+        {
+          "group": "Agents",
+          "pages": [
+            "agents/introduction",
+            "agents/prompts",
+            "agents/tools",
+            "agents/knowledge",
+            "agents/memory",
+            "agents/storage",
+            "agents/structured-output",
+            "agents/reasoning",
+            "agents/teams"
+          ]
+        },
+        {
+          "group": "Models",
+          "pages": [
+            "models/introduction",
+            "models/openai",
+            "models/anthropic",
+            "models/cohere",
+            "models/ollama",
+            "models/groq",
+            "models/openai-like",
+            "models/deepseek",
+            "models/sambanova",
+            "models/aws-bedrock",
+            "models/together",
+            "models/fireworks",
+            "models/mistral",
+            "models/google_ai_studio",
+            "models/xai",
+            "models/azure",
+            "models/huggingface",
+            "models/openrouter",
+            "models/nvidia"
+          ]
+        },
+        {
+          "group": "Tools",
+          "pages": [
+            "tools/introduction",
+            "tools/functions",
+            "tools/toolkits",
+            "tools/custom-toolkits",
+            "tools/airflow",
+            "tools/apify",
+            "tools/arxiv",
+            "tools/aws_lambda",
+            "tools/calculator",
+            "tools/composio",
+            "tools/crawl4ai",
+            "tools/csv",
+            "tools/dalle",
+            "tools/duckdb",
+            "tools/duckduckgo",
+            "tools/email",
+            "tools/exa",
+            "tools/file",
+            "tools/firecrawl",
+            "tools/github",
+            "tools/googlesearch",
+            "tools/hackernews",
+            "tools/jina_reader",
+            "tools/jira",
+            "tools/mlx_transcribe",
+            "tools/models_labs",
+            "tools/newspaper",
+            "tools/newspaper4k",
+            "tools/openbb",
+            "tools/pandas",
+            "tools/phi",
+            "tools/postgres",
+            "tools/pubmed",
+            "tools/python",
+            "tools/resend",
+            "tools/searxng",
+            "tools/serpapi",
+            "tools/shell",
+            "tools/slack",
+            "tools/sleep",
+            "tools/spider",
+            "tools/sql",
+            "tools/tavily",
+            "tools/twitter",
+            "tools/website",
+            "tools/wikipedia",
+            "tools/yfinance",
+            "tools/youtube",
+            "tools/zendesk",
+            "tools/zoom"
+          ]
+        },
+        {
+          "group": "Knowledge",
+          "pages": [
+            "knowledge/introduction",
+            "knowledge/pdf",
+            "knowledge/pdf-url",
+            "knowledge/text",
+            "knowledge/docx",
+            "knowledge/json",
+            "knowledge/website",
+            "knowledge/wikipedia",
+            "knowledge/arxiv",
+            "knowledge/combined",
+            "knowledge/langchain",
+            "knowledge/llamaindex"
+          ]
+        },
+        {
+          "group": "VectorDbs",
+          "pages": [
+            "vectordb/introduction",
+            "vectordb/pgvector",
+            "vectordb/qdrant",
+            "vectordb/pinecone",
+            "vectordb/lancedb",
+            "vectordb/chroma",
+            "vectordb/singlestore"
+          ]
+        },
+        {
+          "group": "Storage",
+          "pages": [
+            "storage/introduction",
+            "storage/postgres",
+            "storage/sqlite",
+            "storage/singlestore",
+            "storage/dynamodb"
+          ]
+        },
+        {
+          "group": "Embeddings",
+          "pages": [
+            "embedder/introduction",
+            "embedder/openai",
+            "embedder/ollama",
+            "embedder/voyageai",
+            "embedder/azure_openai",
+            "embedder/mistral",
+            "embedder/fireworks",
+            "embedder/together"
+          ]
+        },
+        {
+          "group": "Workflows",
+          "pages": [
+            "workflows/introduction",
+            "workflows/session-state",
+            "workflows/streaming",
+            "workflows/news-report-generator"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Examples",
+      "pages": [
+        "examples/introduction",
+        {
+          "group": "Agents",
+          "pages": [
+            "examples/agents/web-search",
+            "examples/agents/finance-agent",
+            "examples/agents/agent-team",
+            "examples/agents/reasoning-agent",
+            "examples/agents/python-agent",
+            "examples/agents/data-analyst",
+            "examples/agents/structured-output",
+            "examples/agents/python-function-agent",
+            "examples/agents/vision-agent"
+          ]
+        },
+        {
+          "group": "Models",
+          "pages": [
+            "examples/provider/openai",
+            "examples/provider/azure",
+            "examples/provider/claude",
+            "examples/provider/cohere",
+            "examples/provider/fireworks",
+            "examples/provider/gemini",
+            "examples/provider/groq",
+            "examples/provider/mistral",
+            "examples/provider/ollama",
+            "examples/provider/together",
+            "examples/provider/aws_bedrock",
+            "examples/provider/deepseek",
+            "examples/provider/huggingface",
+            "examples/provider/nvidia",
+            "examples/provider/openrouter",
+            "examples/provider/sambanova",
+            "examples/provider/xai"
+          ]
+        },
+        {
+          "group": "Integrations",
+          "pages": [
+            "examples/integrations/composio",
+            "examples/integrations/pgvector",
+            "examples/integrations/singlestore",
+            "examples/integrations/lancedb",
+            "examples/integrations/pinecone",
+            "examples/integrations/qdrant",
+            "examples/integrations/chroma",
+            "examples/integrations/portkey"
+          ]
+        },
+        {
+          "group": "Agent Teams",
+          "pages": [
+            "examples/teams/research",
+            "examples/teams/journalist",
+            "examples/teams/investment",
+            "examples/teams/hackernews"
+          ]
+        },
+        {
+          "group": "Use Cases",
+          "pages": [
+            "examples/use-case/sql",
+            "examples/use-case/worldbuilding",
+            "examples/use-case/arxiv-research"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "How To",
+      "pages": [
+        "examples/how-to/use-cookbook"
+      ]
+    },
+    {
+      "group": "How To",
+      "pages": ["how-to/install", "migration/2-5-0"]
+    },
+    {
+      "group": "Templates",
+      "pages": [
+        "templates/introduction",
+        {
+          "group": "Agent App",
+          "pages": [
+            "templates/agent-app/run-local",
+            "templates/agent-app/run-aws"
+          ]
+        },
+        {
+          "group": "Agent API",
+          "pages": [
+            "templates/agent-api/run-local",
+            "templates/agent-api/run-aws"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "How to",
+      "pages": [
+        {
+          "group": "Manage Application",
+          "pages": [
+            "templates/how-to/development-app",
+            "templates/how-to/production-app",
+            "templates/how-to/install",
+            "templates/how-to/secrets",
+            "templates/how-to/env-vars",
+            "templates/how-to/database-tables",
+            "templates/how-to/ci-cd",
+            "templates/how-to/domain-https",
+            "templates/how-to/ssh-access"
+          ]
+        },
+        {
+          "group": "Manage Workspace",
+          "pages": [
+            "templates/how-to/workspace-settings",
+            "templates/how-to/git-repo",
+            "templates/how-to/new-users",
+            "templates/how-to/format-and-validate"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Workspace",
+      "pages": [
+        "templates/workspace/introduction",
+        "templates/workspace/settings",
+        "templates/workspace/resources"
+      ]
+    },
+    {
+      "group": "Apps",
+      "pages": [
+        "templates/apps/introduction",
+        "templates/apps/examples",
+        "templates/apps/features"
+      ]
+    },
+    {
+      "group": "Resources",
+      "pages": [
+        "templates/resources/introduction",
+        {
+          "group": "Docker",
+          "pages": [
+            "templates/resources/docker/introduction",
+            "templates/resources/docker/container"
+          ]
+        },
+        {
+          "group": "AWS",
+          "pages": [
+            "templates/resources/aws/introduction",
+            "templates/resources/aws/ecs",
+            "templates/resources/aws/rds"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Building Blocks",
+      "pages": [
+        "reference/agent",
+        {
+          "group": "Custom Agents",
+          "pages": ["reference/agents/python", "reference/agents/duckdb"]
+        },
+        {
+          "group": "Models",
+          "pages": [
+            "reference/model/base",
+            "reference/model/openai",
+            "reference/model/aws",
+            "reference/model/together",
+            "reference/model/ollama",
+            "reference/model/fireworks",
+            "reference/model/mistral",
+            "reference/model/groq",
+            "reference/model/gemini",
+            "reference/model/azure",
+            "reference/model/claude",
+            "reference/model/cohere",
+            "reference/model/deepseek",
+            "reference/model/openrouter",
+            "reference/model/sambanova"
+          ]
+        },
+        {
+          "group": "Storage",
+          "pages": [
+            "reference/storage/postgres",
+            "reference/storage/sqlite",
+            "reference/storage/singlestore",
+            "reference/storage/dynamodb"
+          ]
+        },
+        {
+          "group": "Knowledge Base",
+          "pages": [
+            "reference/kb/base",
+            "reference/kb/arxiv",
+            "reference/kb/combined",
+            "reference/kb/csv",
+            "reference/kb/docx",
+            "reference/kb/document",
+            "reference/kb/json",
+            "reference/kb/langchain",
+            "reference/kb/llamaindex",
+            "reference/kb/pdf",
+            "reference/kb/pdf-url",
+            "reference/kb/text",
+            "reference/kb/website",
+            "reference/kb/wikipedia"
+          ]
+        },
+        {
+          "group": "VectorDbs",
+          "pages": [
+            "reference/vectordb/pgvector",
+            "reference/vectordb/pgvector2",
+            "reference/vectordb/singlestore",
+            "reference/vectordb/qdrant",
+            "reference/vectordb/lancedb",
+            "reference/vectordb/chromadb",
+            "reference/vectordb/pineconedb"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Command Line",
+      "pages": [
+        {
+          "group": "phi",
+          "pages": [
+            "reference/cli/phi/init",
+            "reference/cli/phi/auth",
+            "reference/cli/phi/start",
+            "reference/cli/phi/stop",
+            "reference/cli/phi/patch",
+            "reference/cli/phi/restart",
+            "reference/cli/phi/config",
+            "reference/cli/phi/set",
+            "reference/cli/phi/reset"
+          ]
+        },
+        {
+          "group": "phi ws",
+          "pages": [
+            "reference/cli/ws/create",
+            "reference/cli/ws/up",
+            "reference/cli/ws/down",
+            "reference/cli/ws/patch",
+            "reference/cli/ws/restart",
+            "reference/cli/ws/config",
+            "reference/cli/ws/delete",
+            "reference/cli/ws/setup"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "FAQs",
+      "pages": [
+        "faq/could-not-connect-to-docker",
+        "faq/environment_variables",
+        "faq/phi-auth"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "x": "https://x.com/phidatahq",
+    "github": "https://github.com/phidatahq/phidata",
+    "discord": "https://phidata.link/discord",
+    "youtube": "https://phidata.link/youtube",
+    "website": "https://phidata.com"
+  }
+}
