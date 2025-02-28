@@ -29,9 +29,13 @@ DOWNLOAD_CONFIGS = [
     #     local_path="/home/michael/ubuntu-repos/docsets/lobe-chat"
     # ),
     DownloadConfig(
-        github_url="https://github.com/yamadashy/repomix/tree/main/website/client/src/zh-cn",
-        local_path="/Users/bytedance/repositories/docsets/repomix",
+        github_url="https://github.com/OpenInterpreter/open-interpreter/tree/main/docs",
+        local_path="/home/michael/ubuntu-repos/docsets/open-interpreter"
     ),
+    # DownloadConfig(
+    #     github_url="https://github.com/yamadashy/repomix/tree/main/website/client/src/zh-cn",
+    #     local_path="/Users/bytedance/repositories/docsets/repomix",
+    # ),
 ]
 
 # Supported file extensions
