@@ -28,9 +28,13 @@ DOWNLOAD_CONFIGS = [
     #     github_url="https://github.com/lobehub/lobe-chat/tree/main/docs",
     #     local_path="/home/michael/ubuntu-repos/docsets/lobe-chat"
     # ),
+    # DownloadConfig(
+    #     github_url="https://github.com/OpenInterpreter/open-interpreter/tree/main/docs",
+    #     local_path="/home/michael/ubuntu-repos/docsets/open-interpreter"
+    # ),
     DownloadConfig(
-        github_url="https://github.com/OpenInterpreter/open-interpreter/tree/main/docs",
-        local_path="/home/michael/ubuntu-repos/docsets/open-interpreter"
+        github_url="https://github.com/containrrr/watchtower/tree/main/docs",
+        local_path="/home/michael/ubuntu-repos/docsets/watchtower"
     ),
     # DownloadConfig(
     #     github_url="https://github.com/yamadashy/repomix/tree/main/website/client/src/zh-cn",
