@@ -1,0 +1,1 @@
+[Skip to content](https://github.com/algorithm-visualizer/algorithm-visualizer/wiki/Randomize.Double#start-of-content)
