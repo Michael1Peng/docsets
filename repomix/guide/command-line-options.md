@@ -5,13 +5,14 @@
 
 ## 输出选项
 - `-o, --output <file>`: 输出文件名（默认：`repomix-output.txt`）
-- `--style <type>`: 输出样式（`plain`、`xml`、`markdown`）（默认：`plain`）
+- `--style <type>`: 输出样式（`plain`、`xml`、`markdown`）（默认：`xml`）
 - `--parsable-style`: 启用基于所选样式模式的可解析输出（默认：`false`）
-- `--compress`: 执行智能代码提取，专注于基本函数和类签名，同时移除实现细节
+- `--compress`: 执行智能代码提取，专注于函数和类的签名，同时删除实现细节。有关详细信息和示例，请参阅[代码压缩指南](code-compress)。
 - `--output-show-line-numbers`: 添加行号（默认：`false`）
 - `--copy`: 复制到剪贴板（默认：`false`）
 - `--no-file-summary`: 禁用文件摘要（默认：`true`）
 - `--no-directory-structure`: 禁用目录结构（默认：`true`）
+- `--no-files`: 禁用文件内容输出（仅元数据模式）（默认：`true`）
 - `--remove-comments`: 移除注释（默认：`false`）
 - `--remove-empty-lines`: 移除空行（默认：`false`）
 - `--header-text <text>`: 文件头部包含的自定义文本
@@ -42,6 +43,7 @@
 ## 其他选项
 - `--top-files-len <number>`: 显示的顶部文件数量（默认：`5`）
 - `--verbose`: 启用详细日志
+- `--quiet`: 禁止所有标准输出
 
 ## 示例
 
@@ -67,29 +69,3 @@ repomix --remote https://github.com/user/repo/commit/836abcd7335137228ad77feb286
 # 使用简写的远程仓库
 repomix --remote user/repo
 ```
-
-例如，使用 `--compress` 选项时，这段代码：
-
-```typescript
-const calculateTotal = (items: ShoppingItem[]) => {
-  let total = 0;
-  for (const item of items) {
-    total += item.price * item.quantity;
-  }
-  return total;
-}
-interface Item {
-  name: string;
-  price: number;
-  quantity: number;
-}
-```
-
-将被压缩为：
-
-```typescript
-const calculateTotal = (items: ShoppingItem[]) => {
-interface Item {
-```
-
-这种压缩有助于减少令牌数量，同时保留代码的重要结构信息。
