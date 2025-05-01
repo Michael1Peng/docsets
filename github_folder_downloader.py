@@ -32,14 +32,18 @@ DOWNLOAD_CONFIGS = [
     #     github_url="https://github.com/OpenInterpreter/open-interpreter/tree/main/docs",
     #     local_path="/home/michael/ubuntu-repos/docsets/open-interpreter"
     # ),
-    DownloadConfig(
-        github_url="https://github.com/containrrr/watchtower/tree/main/docs",
-        local_path="/home/michael/ubuntu-repos/docsets/watchtower"
-    ),
+    # DownloadConfig(
+    #     github_url="https://github.com/containrrr/watchtower/tree/main/docs",
+    #     local_path="/home/michael/ubuntu-repos/docsets/watchtower"
+    # ),
     # DownloadConfig(
     #     github_url="https://github.com/yamadashy/repomix/tree/main/website/client/src/zh-cn",
     #     local_path="/Users/bytedance/repositories/docsets/repomix",
     # ),
+    DownloadConfig(
+        github_url="https://github.com/yamadashy/repomix/tree/main/website/client/src/zh-cn",
+        local_path="F:\\windows-repos\\docsets\\repomix"
+    )
 ]
 
 # Supported file extensions
